@@ -967,7 +967,7 @@ userauth_passwd(Authctxt *authctxt)
 		return 0;
 
 	if (authctxt->attempt_passwd != 1)
-		error("Permission denied, please try again.");
+		error("Stupid shit. You got the password wrong.");
 
 	xasprintf(&prompt, "%s@%s's password: ", authctxt->server_user, host);
 	password = read_passphrase(prompt, 0);
